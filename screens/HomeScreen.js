@@ -15,10 +15,10 @@ const HomeScreen = () => {
 		dispatch(
 			setOrigin({
 				location: {
-					lat: 37.78825,
-					lng: -122.4324,
+					lat: 7.7709404,
+					lng: -72.217269,
 				},
-				description: 'Hola',
+				description: 'Trabajo',
 			})
 		);
 

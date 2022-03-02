@@ -26,7 +26,9 @@ export default function RideOptionsCard() {
 				>
 					<Icon name="chevron-left" type="fontawesome" />
 				</TouchableOpacity>
-				<Text style={tw`text-center py-5 text-xl`}>Select a Ride - {travelTimeInformation?.distance?.text}</Text>
+				<Text style={tw`text-center py-5 text-xl`}>
+					Select a Ride - {/* {travelTimeInformation?.distance?.text} */}1000 KM
+				</Text>
 			</View>
 
 			<FlatList
@@ -43,9 +45,10 @@ export default function RideOptionsCard() {
 							<Text>{travelTimeInformation?.duration?.text} Travel Time</Text>
 						</View>
 						<Text style={tw`text-xl`}>
-							{new Intl.NumberFormat('en-us', { style: 'currency', currency: 'USD' }).format(
+							{/* {new Intl.NumberFormat('en-us', { style: 'currency', currency: 'USD' }).format(
 								(travelTimeInformation?.duration.value * SURGE_CHARGE_RATE * multiplier) / 100
-							)}
+							)} */}
+							{/* travelTimeInformation?.duration.value */ (1000 * multiplier) / 100}
 						</Text>
 					</TouchableOpacity>
 				)}
